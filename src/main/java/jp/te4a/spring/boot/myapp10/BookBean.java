@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.myapp9;
+package jp.te4a.spring.boot.myapp10;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,7 +10,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="books")
+@Table(name="book")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
