@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.myapp13;
+package jp.te4a.spring.boot.myapp13.bean;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

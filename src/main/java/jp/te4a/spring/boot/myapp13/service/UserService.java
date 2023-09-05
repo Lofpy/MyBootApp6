@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.myapp13;
+package jp.te4a.spring.boot.myapp13.service;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
@@ -10,9 +10,10 @@ import jp.te4a.spring.boot.myapp13.repository.UserRepository;
 public class UserService {
 	@Autowired
 	UserRepository userRepository;
+	Pbkdf2PasswordEncoder passwordEncoder;
 	
 	public UserForm create(UserForm userForm) {
-		userForm.setPassword(new Pbkdf2PasswordEncoder().encode(userForm.getPassword()));
+		userForm.setPassword(passwordEncoder.encode(userForm.getPassword()));
 		UserBean userBean = new UserBean();
 		BeanUtils.copyProperties(userForm, userBean);
 		userRepository.save(userBean);

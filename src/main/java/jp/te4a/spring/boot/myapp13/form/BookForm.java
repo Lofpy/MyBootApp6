@@ -1,8 +1,9 @@
-package jp.te4a.spring.boot.myapp13;
+package jp.te4a.spring.boot.myapp13.form;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import jp.te4a.spring.boot.myapp13.validate.WritterValid;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
